@@ -5,6 +5,3 @@ RUN pip install --no-cache-dir getmail6
 
 # Set working directory
 WORKDIR /config
-
-# Per default lasciamo la shell, tu lo richiami via Ofelia
-ENTRYPOINT ["sleep", "infinity"]
