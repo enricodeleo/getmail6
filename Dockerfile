@@ -1,7 +1,7 @@
 FROM python:3-alpine
 
 # Create non-root user and group
-RUN addgroup -S getmail && adduser -S getmail -G getmail
+RUN addgroup -g 1000 getmail && adduser -u 1000 -G getmail -D getmail
 
 # Install getmail6
 RUN pip install --no-cache-dir getmail6
